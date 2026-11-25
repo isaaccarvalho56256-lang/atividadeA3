@@ -143,6 +143,7 @@ h3 {
 
 .page-main {
   min-height: 70vh;
+  padding-bottom: 115px;
 }
 
 .page-hero {
