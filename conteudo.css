@@ -159,6 +159,10 @@ img{
     .reference{
     margin-bottom: 50px;
   }
+  img{
+    width: 150px;
+  }
+
     .site-header {
     flex-direction: column;
     gap: 12px;
@@ -177,6 +181,10 @@ img{
   .site-footer{
     width: 100%;
   }
+  img{
+    width: 150px;
+  }
+
   .reference{
     margin-bottom: 50px;
   }
