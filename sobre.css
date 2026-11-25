@@ -160,9 +160,12 @@ h1{
 
 .about-layout img {
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   border-radius: 20px;
   background: #eaf1eb;
+}
+img{
+  border-radius:15px;
 }
 
 .site-footer {
