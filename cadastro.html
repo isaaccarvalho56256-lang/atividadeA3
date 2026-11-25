@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETB | Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Logo da etb" width="90px"></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="conteudo.html">Nossa escola</a><a href="dados.html">Informações</a><a
+        class="active" href="cadastro.html">Cadastro</a><a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <h1>Seu próximo passo <span>começa aqui.</span></h1>
+      <p>Preencha o formulário para se cadastrar e garantir sua vaga.</p>
+    </section>
+
+    <section class="section form-section">
+      </div>
+      <form id="cadastroForm" class="school-form">
+        <div class="form-row">
+          <div class="form-group"><label for="nome">Nome completo *</label><input type="text" id="nome" name="nome"
+              placeholder="Digite seu nome" minlength="3" maxlength="80" autocomplete="name" required></div>
+          <div class="form-group"><label for="email">E-mail *</label><input type="email" id="email" name="email"
+              placeholder="exemplo@email.com" autocomplete="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="telefone">Telefone</label><input type="tel" id="telefone" name="telefone"
+              placeholder="(00) 00000-0000" pattern="[0-9() +-]{8,20}" autocomplete="tel"></div>
+          <div class="form-group"><label for="nascimento">Data de nascimento</label><input type="date" id="nascimento"
+              name="nascimento"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="idade">Idade</label><input type="number" id="idade" name="idade" min="3"
+              max="100" placeholder="Ex.: 12"></div>
+          <div class="form-group"><label for="etapa">Etapa de interesse *</label><select id="etapa" name="etapa"
+              required>
+              <option value="">Selecione uma opção</option>
+              <option>Ensino Fundamental I</option>
+              <option>Ensino Fundamental II</option>
+              <option>Atividades em período integral</option>
+              <option>Quero receber informações</option>
+            </select></div>
+        </div>
+
+        <fieldset class="form-fieldset">
+          <legend>Qual turno prefere?</legend>
+          <label class="choice"><input type="radio" name="turno" value="Matutino" required> Matutino</label>
+          <label class="choice"><input type="radio" name="turno" value="Vespertino"> Vespertino</label>
+          <label class="choice"><input type="radio" name="turno" value="Integral"> Integral</label>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Quais atividades despertam seu interesse?</legend>
+          <label class="choice"><input type="checkbox" name="atividades" value="Leitura"> Clube de leitura</label>
+          <label class="choice"><input type="checkbox" name="atividades" value="Esportes"> Esportes</label>
+          <label class="choice"><input type="checkbox" name="atividades" value="Tecnologia"> Tecnologia</label>
+          <label class="choice"><input type="checkbox" name="atividades" value="Artes"> Artes</label>
+        </fieldset>
+
+        <div class="form-group"><label for="mensagem">Conte um pouco sobre o que procura</label><textarea id="mensagem"
+            name="mensagem" rows="4" maxlength="500" placeholder="Escreva sua mensagem (opcional)"></textarea></div>
+        <div class="form-group"><label for="arquivo">Anexo (opcional)</label><input type="file" id="arquivo"
+            name="arquivo" accept=".pdf,.jpg,.jpeg,.png"><small>Formatos aceitos: PDF, JPG ou PNG.</small></div>
+        <label class="choice consent"><input type="checkbox" id="consentimento" required> Confirmo que as informações
+          preenchidas são verdadeiras. *</label>
+        <button class="button button-primary submit-button" type="submit">Enviar pré-cadastro</button>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Atividade A3 - Desenvolvimento web</p>
+    <span>© 2026 Escola Técnica de Brasília</span>
+  </footer>
+</body>
+
+</html>

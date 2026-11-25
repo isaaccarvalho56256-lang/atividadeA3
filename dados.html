@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETB | Escola técnica de Brasília</title>
+  <link rel="stylesheet" href="dados.css">
+  <style>
+    /* CSS interno*/
+    .school-table th {
+      background-color: #173b36;
+      color: #ffffff;
+    }
+
+    .school-table td {
+      background-color: #ffffff;
+    }
+
+    .school-table tr:nth-child(even) td {
+      background-color: #f0f5f2;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="90px"></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="conteudo.html">Nossa escola</a>
+      <a class="active" href="dados.html">Informações</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <span class="eyebrow">INFORMAÇÕES ORGANIZADAS</span>
+      <h1>Um pouco da nossa <span>rotina escolar.</span></h1>
+      <p>Consulte exemplos de horários, atividades e etapas de ensino.</p>
+    </section>
+
+    <section class="section table-section">
+      <div class="section-heading left-heading">
+        <h2>Turnos de <span>funcionamento.</span></h2>
+        <p>Os dados abaixo são fictícios e foram criados exclusivamente para fins acadêmicos.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="school-table">
+          <thead>
+            <tr>
+              <th scope="col">Turno</th>
+              <th scope="col">Entrada</th>
+              <th scope="col">Saída</th>
+              <th scope="col">Etapas atendidas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matutino</td>
+              <td>07h30</td>
+              <td>11h50</td>
+              <td>Fundamental I e II</td>
+            </tr>
+            <tr>
+              <td>Vespertino</td>
+              <td>13h00</td>
+              <td>17h20</td>
+              <td>Fundamental I e II</td>
+            </tr>
+            <tr>
+              <td>Integral</td>
+              <td>07h30</td>
+              <td>17h20</td>
+              <td>Atividades ampliadas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Atividade A3 - ETB</p>
+    <span>Escola Técnica de Brasília</span>
+  </footer>
+</body>
+
+</html>
